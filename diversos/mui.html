@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- load MUI -->
+    <link href="mui.min.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="mui_tela.css" />
+    <script src="mui.min.js"></script>
+	<script>
+ 	   function activateModal() {
+    	   // initialize modal element
+    	   var modalEl = document.createElement('div');
+    	   modalEl.style.width = '400px';
+    	   modalEl.style.height = '300px';
+    	   modalEl.style.margin = '100px auto';
+    	   modalEl.style.backgroundColor = '#fff';
+
+    	   // show modal
+    	   mui.overlay('on', modalEl);
+  	 	}
+	</script>
+  </head>
+  <body class="hide-sidedrawer">
+
+
+<header id="header">
+  <nav id="appbar" class="mui-container-fluid" style="background-color:#87CEEB">
+  <table width="100%" cellspacing="0">
+    <tr class="mui--appbar-height">
+      <td>
+        <div class="appbar-brand" valign="center"><a id="appbar-sidenav-show" class="mui--visible-xs-inline-block mui--visible-sm-inline-block"><i class="icon-menu"></i></a><a id="appbar-sidenav-hide" class="mui--hidden-xs mui--hidden-sm"><i class="icon-menu"></i></a> <image src="menu-button-branco.ico" width=20> EVOTELO </div>
+      </td>
+      <td class="mui--text-right">
+        <div id="appbar-social-links" class="mui--hidden-xs">
+          <a href="https://github.com/muicss/mui"><i class="icon-github"></i></a>
+          <a href="https://twitter.com/mui_css"><i class="icon-twitter"></i></a>
+          <a href="/newsletter"><i class="icon-email"></i></a>
+        </div>
+        <div class="mui-dropdown">
+          <a id="appbar-more-vert" data-mui-toggle="dropdown"><i class="icon-more-vert"></i></a>
+          <ul class="mui-dropdown__menu mui-dropdown__menu--right">
+            <li><a href="/docs/v1/getting-started/introduction">Introduction</a></li>
+            <li><a href="/docs/v1/getting-started/roadmap">Roadmap</a></li>
+            <li><a href="/support">Support</a></li>
+            <li><a href="/feedback">Feedback</a></li>
+          </ul>
+        </div>
+      </td>
+    </tr>
+  </table>
+</nav>
+</header>
+<div id="content-wrapper">
+	<div id="appbar-placeholder" class="mui--appbar-height"></div>
+	<div class="mui-container-fluid" style="background-color:#FFF;"> <!-- 
+  		<div class="mui-row">
+			<div class="mui-col-sm-10 mui-col-sm-offset-1">
+				<div class="mui-container-fluid" style="background-color:#FFF;"> -->
+ 
+	<form class="mui-form">
+  		<legend><i class="fa fa-globe"></i>Título</legend>
+  	  	<div class="mui-textfield">
+    		<input type="text">
+    		<label>Nome</label>
+  		</div>
+  		<div class="mui-textfield">
+    		<input type="text">
+    		<label>Telefone</label>
+  		</div>
+  	  	<div class="mui-textfield">
+    		<textarea></textarea>
+    		<label>Endereço</label>
+  		</div>
+  	  	<button type="submit" class="mui-btn mui-btn--raised">Submit</button>
+  	  	<button type="submit" class="mui-btn mui-btn--primary mui-btn--raised">Teste</button>
+		<div class="mui-dropdown">
+		  <button class="mui-btn mui-btn--danger" data-mui-toggle="dropdown">
+		    Dropdown
+		    <span class="mui-caret"></span>
+		  </button>
+		  <ul class="mui-dropdown__menu">
+		    <li><a href="#">Option 1</a></li>
+		    <li><a href="#">Option 2</a></li>
+		    <li><a href="#">Option 3</a></li>
+		    <li><a href="#">Option 4</a></li>
+		  </ul>
+		</div>		
+		<button class="mui-btn mui-btn--primary" onclick="activateModal()">Activate modal</button>				
+	</form>
+	
+<table class="mui-table mui-table--bordered">
+  <thead>
+    <tr>
+      <th>Column 1</th>
+      <th>Column 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell 1-1</td>
+      <td>Cell 1-2</td>
+    </tr>
+    <tr>
+      <td>Cell 2-1</td>
+      <td>Cell 2-2</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<ul class="mui-tabs__bar mui-tabs__bar--justified">
+  <li class="mui--is-active"><a data-mui-toggle="tab" data-mui-controls="pane-justified-1">Tab-1</a></li>
+  <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-2">Tab-2</a></li>
+  <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-3">Tab-3</a></li>
+</ul>
+<div class="mui-tabs__pane mui--is-active" id="pane-justified-1">
+<h2>Pane-1</h2>
+<p>Isto é um teste</p>
+<p>Isto é um outro teste</p>
+</div>
+<div class="mui-tabs__pane" id="pane-justified-2">Pane-2</div>
+<div class="mui-tabs__pane" id="pane-justified-3">Pane-3</div>	
+<p><div><button class="mui-btn mui-btn--fab mui-btn--primary">+</button></div></p>
+</div> <!--
+</div>
+</div>
+ </div> -->
+ </div>
+ <footer id="footer"  style="background-color:#87CEEB">
+   <div class="mui-container-fluid">
+   <nav class="mui-row" role="navigation">
+     <div class="mui-col-sm-10 mui-col-sm-offset-1">
+       <div class="space-top"></div>
+       <ul class="mui-list--inline mui--text-body2 mui--text-light">
+         <li><a href="/support">Support</a></li>
+         <li><a href="/feedback?next=https%3A%2F%2Fwww.muicss.com%2Fdocs%2Fv1%2Fcss-js%2Fpanels">Feedback</a></li>
+         <li><a href="/newsletter">Newsletter</a></li>
+         <li><a href="https://twitter.com/mui_css">Twitter</a></li>
+         <li><a href="https://www.facebook.com/muicss">Facebook</a></li>
+         <li><a href="https://github.com/muicss/mui">Github</a></li>
+       </ul>
+     </div>
+   </nav>
+ </div>
+ </footer>
+ 
+ 
+ 
+  </body>
+</html>
